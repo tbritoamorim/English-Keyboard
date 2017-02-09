@@ -1,0 +1,64 @@
+/* line 7, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+body {
+  overflow: hidden;
+  background-color: #ffc914;
+}
+
+/* line 11, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  flex: 1;
+}
+
+/* line 19, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.aux, .sub, .verb {
+  display: inline-flex;
+}
+
+/* line 23, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.aux .key {
+  background-color: #76b041;
+}
+
+/* line 27, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.sub .key {
+  background-color: #17bebb;
+}
+
+/* line 31, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.verb .key {
+  background-color: #e4572e;
+}
+
+/* line 35, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.key {
+  margin: .5rem;
+  text-transform: uppercase;
+  border: .15rem solid black;
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  text-align: center;
+  color: white;
+}
+
+/* line 44, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+kbd {
+  display: block;
+  font-size: 2rem;
+}
+
+/* line 48, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+span {
+  font-family: sans-serif;
+  font-size: 1rem;
+  margin-top: .1rem;
+  margin-bottom: .1rem;
+  color: #2e282a;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=../stylesheet.map */

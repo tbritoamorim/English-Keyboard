@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "Sass/stylesheet.css",
+	"sources": [
+		"Sass/stylesheet.sass"
+	],
+	"sourcesContent": [
+		"$flame: rgba(228, 87, 46, 1);\n$tifannyBlue: rgba(23, 190, 187, 1);\n$mikadoYellow: rgba(255, 201, 20, 1);\n$charlestonGreen: rgba(46, 40, 42, 1);\n$palmLeaf: rgba(118, 176, 65, 1);\n\nbody {\n  overflow: hidden;\n  background-color: $mikadoYellow; }\n\n.keys {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n  min-height: 100vh;\n  flex: 1; }\n\n.aux, .sub, .verb {\n  display: inline-flex; }\n\n.aux {\n  .key {\n    background-color: $palmLeaf; } }\n\n.sub {\n  .key {\n    background-color: $tifannyBlue; } }\n\n.verb {\n  .key {\n    background-color: $flame; } }\n\n\n.key {\n  margin: .5rem;\n  text-transform: uppercase;\n  border: .15rem solid black;\n  border-radius: 5px;\n  padding: .5rem 1rem;\n  text-align: center;\n  color: white; }\n\nkbd {\n  display: block;\n  font-size: 2rem; }\n\nspan {\n  font-family: sans-serif;\n  font-size: 1rem;\n  margin-top: .1rem;\n  margin-bottom: .1rem;\n  color: $charlestonGreen;\n  font-weight: bold; }\n"
+	],
+	"mappings": ";AAMA,AAAA,IAAI,CAAC;EACH,QAAQ,EAAE,MAAO;EACjB,gBAAgB,EANH,OAAI;CAMiB;;;AAEpC,AAAA,KAAK,CAAC;EACJ,OAAO,EAAE,IAAK;EACd,WAAW,EAAE,MAAO;EACpB,eAAe,EAAE,MAAO;EACxB,cAAc,EAAE,MAAO;EACvB,UAAU,EAAE,KAAM;EAClB,IAAI,EAAE,CAAE;CAAG;;;AAEb,AAAA,IAAI,EAAE,AAAA,IAAI,EAAE,AAAA,KAAK,CAAC;EAChB,OAAO,EAAE,WAAY;CAAG;;;AAE1B,AACE,IADE,CACF,IAAI,CAAC;EACH,gBAAgB,EAnBT,OAAI;CAmBmB;;;AAElC,AACE,IADE,CACF,IAAI,CAAC;EACH,gBAAgB,EA1BN,OAAI;CA0BmB;;;AAErC,AACE,KADG,CACH,IAAI,CAAC;EACH,gBAAgB,EA/BZ,OAAI;CA+BmB;;;AAG/B,AAAA,IAAI,CAAC;EACH,MAAM,EAAE,KAAM;EACd,cAAc,EAAE,SAAU;EAC1B,MAAM,EAAE,kBAAmB;EAC3B,aAAa,EAAE,GAAI;EACnB,OAAO,EAAE,UAAW;EACpB,UAAU,EAAE,MAAO;EACnB,KAAK,EAAE,KAAM;CAAG;;;AAElB,AAAA,GAAG,CAAC;EACF,OAAO,EAAE,KAAM;EACf,SAAS,EAAE,IAAK;CAAG;;;AAErB,AAAA,IAAI,CAAC;EACH,WAAW,EAAE,UAAW;EACxB,SAAS,EAAE,IAAK;EAChB,UAAU,EAAE,KAAM;EAClB,aAAa,EAAE,KAAM;EACrB,KAAK,EAjDW,OAAI;EAkDpB,WAAW,EAAE,IAAK;CAAG",
+	"names": []
+}
