@@ -1,13 +1,12 @@
 /* line 7, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 body {
-  overflow: hidden;
   background-color: #ffc914;
 }
 
 /* line 11, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .keys {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
@@ -34,7 +33,7 @@ body {
   background-color: #e4572e;
 }
 
-/* line 32, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 31, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .key {
   margin: .5rem;
   text-transform: uppercase;
@@ -47,13 +46,13 @@ body {
   transition: all 0.7s ease;
 }
 
-/* line 43, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 42, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 kbd {
   display: block;
   font-size: 2.3rem;
 }
 
-/* line 47, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 46, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 span {
   font-family: sans-serif;
   font-size: 1rem;
@@ -64,18 +63,28 @@ span {
   text-shadow: none;
 }
 
-/* line 56, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 55, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .playing {
   transform: scale(1.2);
   border-color: #65575c;
   box-shadow: 0px 0px 5px #2e282a;
 }
 
-/* line 60, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 59, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .playing.key {
   background-color: white;
   text-shadow: none;
   color: black;
+}
+
+/* line 64, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+form {
+  display: inline;
+}
+
+/* line 67, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+p {
+  display: inline;
 }
 
 /*# sourceMappingURL=../stylesheet.map */
