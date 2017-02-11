@@ -1,48 +1,68 @@
-$yellow: #ffc600
+$flame: rgba(228, 87, 46, 1)
+$tifannyBlue: rgba(23, 190, 187, 1)
+$mikadoYellow: rgba(255, 201, 20, 1)
+$charlestonGreen: rgba(46, 40, 42, 1)
+$palmLeaf: rgba(118, 176, 65, 1)
 
 body
-  background-image: url("background.jpeg")
-  background-size: cover
-  overflow: hidden
+  //overflow: hidden
+  background-color: $mikadoYellow
 
 .keys
   display: flex
-  flex: 1
-  flex-direction: row
   align-items: center
   justify-content: center
-  margin: 0 auto
+  flex-direction: column
   min-height: 100vh
+  flex: 1
+
+.aux, .sub, .verb
+  display: inline-flex
+
+.aux .key
+  background-color: $palmLeaf
+
+.sub .key
+  background-color: $tifannyBlue
+
+.verb .key
+  background-color: $flame
 
 .key
+  margin: .5rem
+  text-transform: uppercase
+  border: .15rem solid black
+  border-radius: 5px
+  padding: .5rem 1rem
   text-align: center
-  margin: .9rem
-  border-radius: 0.3rem
-  padding: 1rem 0.5rem
-  border: 0.2rem solid black
-  background-color: rgba(0, 0, 0, 0.4)
   color: white
-  display: inline-block
-  width: 6rem
-  transition: all 0.07s ease
-  box-shadow: 0 0 1rem lighten(black, 30%)
+  text-shadow: 2px 2px 1px black
+  transition: all 0.7s ease
 
 kbd
   display: block
-  font-size: 2rem
-  font-family: 'Bree Serif', serif
+  font-size: 2.3rem
 
 span
-  font-size: .8rem
-  color: $yellow
   font-family: sans-serif
-  letter-spacing: .1rem
-
-.description
-  color: $yellow
-  margin-top: 5px
+  font-size: 1rem
+  margin-top: .1rem
+  margin-bottom: .1rem
+  color: $charlestonGreen
+  font-weight: bold
+  text-shadow: none
 
 .playing
-  transform: scale(1.1)
-  border-color: $yellow
-  box-shadow: 0 0 1rem lighten($yellow, 30%)
+  transform: scale(1.2)
+  border-color: lighten($charlestonGreen, 20%)
+  box-shadow: 0px 0px 5px $charlestonGreen
+  &.key
+    background-color: white
+    text-shadow: none
+    color: black
+
+form
+  display: inline
+
+p
+ display: inline
