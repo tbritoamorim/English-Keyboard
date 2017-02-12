@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   </head>
   <body>
@@ -25,22 +26,26 @@
         <div class="key" data-key="98"><kbd data-key="98">study?</kbd><span>2</span></div>
         <div class="key" data-key="99"><kbd data-key="99">run?</kbd><span>3</span></div>
         <div class="key" data-key="100"><kbd data-key="100">sing?</kbd><span>4</span></div>
-        <div class="key" data-key="101"><kbd data-key="101">swim?</kbd><span>5</span></div>
       </div>
       <div class="verb">
+        <div class="key" data-key="101"><kbd data-key="101">swim?</kbd><span>5</span></div>
         <div class="key" data-key="102"><kbd data-key="102">exercise?</kbd><span>6</span></div>
         <div class="key" data-key="103"><kbd data-key="103">dance?</kbd><span>7</span></div>
         <div class="key" data-key="104"><kbd data-key="104">read?</kbd><span>8</span></div>
         <div class="key" data-key="105"><kbd data-key="105">smile?</kbd><span>9</span></div>
       </div>
-      <div>
+      <div id="question">
         <form>
             <p>
-              Your question here:
+              Press the keys and your question will appear here:
             </p>
             <input type="text" value="" name="input" id="sentence"/>
+            <p style="display: block">
+              If a mistake is made, the question will be rewritten and you can try again.
+            </p>
         </form>
       </div>
+      <button onclick="resetQuestion()">Reset</button>
       <audio data-key="85" src="audios/DO.wav"></audio>
       <audio data-key="87" src="audios/DOES.wav"></audio>
       <audio data-key="73" src="audios/DID.wav"></audio>
