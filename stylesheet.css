@@ -1,5 +1,6 @@
 /* line 7, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 body {
+  overflow: hidden;
   background-color: #ffc914;
 }
 
@@ -34,8 +35,23 @@ body {
 }
 
 /* line 31, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.aux {
+  background-color: #17bebb;
+}
+
+/* line 34, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.sub {
+  background-color: #e4572e;
+}
+
+/* line 37, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.verb {
+  background-color: #76b041;
+}
+
+/* line 40, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .key {
-  margin: .5rem;
+  margin: .7rem;
   text-transform: uppercase;
   border: .15rem solid black;
   border-radius: 5px;
@@ -43,16 +59,28 @@ body {
   text-align: center;
   color: white;
   text-shadow: 2px 2px 1px black;
+  box-shadow: 0 0 2px black;
   transition: all 0.7s ease;
 }
 
-/* line 42, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
-kbd {
-  display: block;
-  font-size: 2.3rem;
+/* line 51, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.key:first-child {
+  margin-left: 40rem;
 }
 
-/* line 46, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 53, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+.key:last-child {
+  margin-right: 40rem;
+}
+
+/* line 56, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+kbd {
+  font-family: 'Cabin', sans-serif;
+  display: block;
+  font-size: 2rem;
+}
+
+/* line 61, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 span {
   font-family: sans-serif;
   font-size: 1rem;
@@ -63,28 +91,42 @@ span {
   text-shadow: none;
 }
 
-/* line 55, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 70, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .playing {
   transform: scale(1.2);
   border-color: #65575c;
   box-shadow: 0px 0px 5px #2e282a;
 }
 
-/* line 59, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 74, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 .playing.key {
   background-color: white;
   text-shadow: none;
   color: black;
 }
 
-/* line 64, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 79, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 form {
   display: inline;
 }
 
-/* line 67, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+/* line 82, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
 p {
+  font-family: 'Cabin', sans-serif;
   display: inline;
+}
+
+/* line 86, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+#question {
+  margin-top: 3%;
+  font-size: 1.3rem;
+}
+
+/* line 90, C:/Users/tbrit/Documents/GIT projects/English keyboard/Sass/stylesheet.sass */
+button {
+  background-color: white;
+  border-radius: 5px;
+  padding: .5rem 1rem;
 }
 
 /*# sourceMappingURL=../stylesheet.map */

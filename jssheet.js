@@ -50,6 +50,10 @@ function checkSentence(sentence) {
       break;
   }
 }
+function resetQuestion() {
+  whatWasAsked.value = "";
+}
+
 const KEYS = Array.from(document.getElementsByClassName('key'));
 KEYS.forEach(key => key.addEventListener('transitionend', removeTransition));
 window.addEventListener('keydown', playSound);
