@@ -5,7 +5,7 @@ $charlestonGreen: rgba(46, 40, 42, 1)
 $palmLeaf: rgba(118, 176, 65, 1)
 
 body
-  //overflow: hidden
+  overflow: hidden
   background-color: $mikadoYellow
 
 .keys
@@ -28,8 +28,17 @@ body
 .verb .key
   background-color: $flame
 
+.aux
+  background-color: $tifannyBlue
+
+.sub
+  background-color: $flame
+
+.verb
+  background-color: $palmLeaf
+
 .key
-  margin: .5rem
+  margin: .7rem
   text-transform: uppercase
   border: .15rem solid black
   border-radius: 5px
@@ -37,11 +46,17 @@ body
   text-align: center
   color: white
   text-shadow: 2px 2px 1px black
+  box-shadow: 0 0 2px black
   transition: all 0.7s ease
+  &:first-child
+    margin-left: 40rem
+  &:last-child
+    margin-right: 40rem
 
 kbd
+  font-family: 'Cabin', sans-serif
   display: block
-  font-size: 2.3rem
+  font-size: 2rem
 
 span
   font-family: sans-serif
@@ -65,4 +80,14 @@ form
   display: inline
 
 p
- display: inline
+  font-family: 'Cabin', sans-serif
+  display: inline
+
+#question
+  margin-top: 3%
+  font-size: 1.3rem
+
+button
+  background-color: white
+  border-radius: 5px
+  padding: .5rem 1rem
